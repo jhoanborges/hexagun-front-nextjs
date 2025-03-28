@@ -7,7 +7,7 @@ import {
   export function CodingAnimation() {
     return (
       <Terminal>
-        <TypingAnimation>> hexagun-cli init --project my-app</TypingAnimation>
+        <TypingAnimation>{"> hexagun-cli init --project my-app"}</TypingAnimation>
   
         <AnimatedSpan delay={1500} className="text-green-500">
           <span>✔ Initializing Hexagun project structure.</span>
