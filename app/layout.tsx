@@ -6,6 +6,7 @@ import { ThemeProvider } from "@/components/ui/theme-provider";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import Head from 'next/head';
 import { Toaster } from "@/components/ui/toaster"
+import { useEffect } from "react";
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -164,7 +165,7 @@ export default function RootLayout({
           fontSans.variable
         )}
       >
-        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
+        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false} storageKey="hexagun-ui-theme">
           <TooltipProvider delayDuration={0}>
             {children}
             <Toaster />

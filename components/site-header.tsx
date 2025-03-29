@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { Button } from "./ui/button";
+import { Button } from "@/components/ui/button"
 import { Search, Menu } from "lucide-react";
 import Image from 'next/image'
 import { ModeToggle } from "@/components/ui/mode-toggle";
@@ -50,7 +50,7 @@ function SiteHeader() {
           </Link>
           
           <Separator orientation="vertical" className="h-full py-2" />
-
+{/*}
           <Tooltip>
             <TooltipTrigger asChild>
               <ModeToggle />
@@ -59,6 +59,7 @@ function SiteHeader() {
               <p>Theme</p>
             </TooltipContent>
           </Tooltip>
+          */}
           
 
         </div>
