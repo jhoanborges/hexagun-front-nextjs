@@ -115,7 +115,7 @@ export default function CertificationsComponent() {
     }
 
     return (
-        <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-2">
+        <div className="grid gap-10 md:grid-cols-3 lg:grid-cols-3">
             {portfolioItems.map((item) => (
                 <CardContainer key={item.id} className="w-full">
                     <CardBody className="bg-background dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl p-6 border shadow-md">
