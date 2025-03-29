@@ -10,7 +10,6 @@ function CertificationsSection() {
             <div className="text-center ">
                 <SparklesText text="Check out my certifications" className="font-bold" />
             </div>
-
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 <CertificationsComponent />
             </div>
