@@ -17,6 +17,7 @@ import CloudSection from "@/components/CloudSection";
 import PortfolioSection from "@/components/PortfolioSection";
 import CertificationsSection from "@/components/CertificationsSection";
 import { BackgroundGradientAnimationDemo } from "@/components/BackgroundGradientAnimationDemo";
+import  ContactForm  from "@/components/ContactForm";
 
 const AnimatedBackground = () => {
   const controls = useAnimation();
@@ -58,30 +59,10 @@ export default function Component() {
 
         <main>
 
-          {/* Hero Section */}
-          <HeroSection />
+        <ContactForm />
 
-          <ReviewsComponent />
-
-          <LaptopSection />
-
-          {/* Features Section */}
           <FeaturesSection />
-
-          {/* Example Section */}
-          <InnovateSection />
-
-          {/*<ExampleSection />*/}
-
-          <CompareComponent />
-          <CloudSection />
-          <PortfolioSection />
-          {/*<CertificationsSection/>*/}
-          {/* Testimonials Section */}
-          {/*<TestimonialsSection />*/}
-
-          {/* CTA Section */}
-          <CTASection />
+          <ReviewsComponent />
         </main>
 
         <SiteFooter />

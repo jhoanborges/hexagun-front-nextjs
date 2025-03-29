@@ -1,5 +1,6 @@
 import React from "react";
 import { Button } from "./ui/button";
+import Link from "next/link"
 
 function CTASection() {
   return (
@@ -12,9 +13,11 @@ function CTASection() {
           Contact us today to discuss how our expertise in hexagonal architecture, web development, and mobile applications can help your business grow and thrive in the digital age.
         </p>
         <div className="flex flex-col sm:flex-row justify-center gap-4">
-          <Button className="bg-sky-500 hover:bg-sky-400 text-white font-semibold h-12 px-8 rounded-lg transition-colors">
-            Contact Us
-          </Button>
+          <Link href="/contact">
+            <button className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition">
+              Contact Us
+            </button>
+          </Link>
           <Button
             variant="outline"
             className="text-white border-slate-600 hover:bg-slate-200 h-12 px-8 rounded-lg transition-colors dark:hover:bg-slate-700"

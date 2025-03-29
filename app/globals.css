@@ -128,3 +128,14 @@
     @apply bg-background text-foreground;
   }
 }
+
+.client-logo {
+  background: linear-gradient(45deg, #ffffff, #c2b9b9); /* Red to Orange gradient */
+  padding: 10px; /* Add some padding */
+  border-radius: 8px; /* Optional: Rounded corners */
+  transition: transform 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+.client-logo:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}

@@ -5,6 +5,7 @@ import { cn } from "@/lib/utils"
 import { ThemeProvider } from "@/components/ui/theme-provider";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import Head from 'next/head';
+import { Toaster } from "@/components/ui/toaster"
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -166,6 +167,7 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="dark">
           <TooltipProvider delayDuration={0}>
             {children}
+            <Toaster />
           </TooltipProvider>
         </ThemeProvider>
       </body>

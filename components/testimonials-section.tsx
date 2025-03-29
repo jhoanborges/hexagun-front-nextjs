@@ -38,7 +38,7 @@ function TestimonialsSection() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
-              <p className="text-slate-300 mb-4">"{testimonial.quote}"</p>
+              <p className="text-slate-300 mb-4">{testimonial.quote}</p>
               <div className="flex items-center">
                 <div className="w-12 h-12 bg-slate-600 rounded-full mr-4"></div>
                 <div>

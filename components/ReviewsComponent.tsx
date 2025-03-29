@@ -31,7 +31,7 @@ const clientLogos = [
 
 const ClientLogo = ({ img, url, name }: { img: string; url: string; name: string }) => {
   return (
-    <a href={url} target="_blank" rel="noopener noreferrer" className="client-logo">
+    <a href={url} target="_blank" rel="noopener noreferrer" className="client-logo bg-white shadow-md rounded-lg p-4 mx-auto">
       <Image 
       width={200}
       height={200}
@@ -42,7 +42,7 @@ const ClientLogo = ({ img, url, name }: { img: string; url: string; name: string
 
 export default function ClientLogosSection() {
   return (
-    <section className="pt-0" data-aos="fade-down" data-aos-delay="1000">
+    <section className="pt-0 mb-4" data-aos="fade-down" data-aos-delay="1000">
       <div className="container mx-auto">
         <div className="flex items-center justify-center overflow-hidden">
           <Marquee pauseOnHover className="[--duration:20s]">
