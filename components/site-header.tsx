@@ -48,7 +48,7 @@ function SiteHeader() {
           <Link href="/contact" className="text-slate-400 hover:text-white transition-colors">
             Contact
           </Link>
-          {/*}
+          
           <Separator orientation="vertical" className="h-full py-2" />
 
           <Tooltip>
@@ -59,7 +59,7 @@ function SiteHeader() {
               <p>Theme</p>
             </TooltipContent>
           </Tooltip>
-          */}
+          
 
         </div>
 
