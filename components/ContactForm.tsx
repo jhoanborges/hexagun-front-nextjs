@@ -6,6 +6,7 @@ import { z } from "zod"
 import emailjs from "@emailjs/browser"
 import { useState } from "react"
 import ReCAPTCHA from "react-google-recaptcha"
+import { useTranslations } from "next-intl"
 
 import { Button } from "@/components/ui/button"
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form"
@@ -13,17 +14,18 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { useToast } from "@/hooks/use-toast"
 
-// Validation schema
-const formSchema = z.object({
-  name: z.string().min(2, { message: "Name must be at least 2 characters." }),
-  email: z.string().email({ message: "Please enter a valid email address." }),
-  message: z.string().min(10, { message: "Message must be at least 10 characters." }),
-})
-
 export default function ContactForm() {
   const { toast } = useToast()
   const [recaptchaToken, setRecaptchaToken] = useState<string | null>(null)
   const [loading, setLoading] = useState(false)
+  const t = useTranslations("Contact")
+
+  // Validation schema with translations
+  const formSchema = z.object({
+    name: z.string().min(2, { message: t("validation.nameMin") }),
+    email: z.string().email({ message: t("validation.emailInvalid") }),
+    message: z.string().min(10, { message: t("validation.messageMin") }),
+  })
 
   // Initialize the form
   const form = useForm<z.infer<typeof formSchema>>({
@@ -39,8 +41,8 @@ export default function ContactForm() {
   async function onSubmit(values: z.infer<typeof formSchema>) {
     if (!recaptchaToken) {
       toast({
-        title: "reCAPTCHA required",
-        description: "Please complete the reCAPTCHA before submitting.",
+        title: t("recaptchaRequired"),
+        description: t("recaptchaDescription"),
         variant: "destructive",
       })
       return
@@ -77,7 +79,7 @@ export default function ContactForm() {
       )
 
       if (response.status === 200) {
-        toast({ title: "Message sent!", description: "We'll get back to you as soon as possible." })
+        toast({ title: t("successTitle"), description: t("successDescription") })
         form.reset()
         setRecaptchaToken(null) // Reset reCAPTCHA
       } else {
@@ -86,8 +88,8 @@ export default function ContactForm() {
     } catch (error) {
       console.error("Error:", error)
       toast({
-        title: "Error",
-        description: "Something went wrong. Please try again later.",
+        title: t("errorTitle"),
+        description: t("errorDescription"),
         variant: "destructive",
       })
     } finally {
@@ -99,8 +101,8 @@ export default function ContactForm() {
   return (
     <div className="mx-auto max-w-md space-y-6 py-8">
       <div className="space-y-2 text-center">
-        <h2 className="text-3xl font-bold">Contact Us</h2>
-        <p className="text-muted-foreground">{`Fill out the form below and we'll get back to you as soon as possible.`}</p>
+        <h2 className="text-3xl font-bold">{t("title")}</h2>
+        <p className="text-muted-foreground">{t("subtitle")}</p>
       </div>
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
@@ -109,9 +111,9 @@ export default function ContactForm() {
             name="name"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Name</FormLabel>
+                <FormLabel>{t("name")}</FormLabel>
                 <FormControl>
-                  <Input placeholder="Your name" {...field} />
+                  <Input placeholder={t("namePlaceholder")} {...field} />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -122,9 +124,9 @@ export default function ContactForm() {
             name="email"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Email</FormLabel>
+                <FormLabel>{t("email")}</FormLabel>
                 <FormControl>
-                  <Input placeholder="your.email@example.com" type="email" {...field} />
+                  <Input placeholder={t("emailPlaceholder")} type="email" {...field} />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -135,9 +137,9 @@ export default function ContactForm() {
             name="message"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Message</FormLabel>
+                <FormLabel>{t("message")}</FormLabel>
                 <FormControl>
-                  <Textarea placeholder="How can we help you?" className="min-h-[120px]" {...field} />
+                  <Textarea placeholder={t("messagePlaceholder")} className="min-h-[120px]" {...field} />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -156,7 +158,7 @@ export default function ContactForm() {
           </div>
 
           <Button type="submit" disabled={loading}>
-            {loading ? "Sending..." : "Send Message"}
+            {loading ? t("sending") : t("send")}
           </Button>
         </form>
       </Form>

@@ -1,0 +1,481 @@
+{
+  "Header": {
+    "home": "Home",
+    "aboutUs": "About Us",
+    "services": "Services",
+    "odoo": "Odoo",
+    "portfolio": "Portfolio",
+    "contact": "Contact",
+    "contactUs": "Contact Us"
+  },
+  "Footer": {
+    "services": "Services",
+    "hexagonalArchitecture": "Hexagonal Architecture",
+    "webDevelopment": "Web Development",
+    "mobileApplications": "Mobile Applications",
+    "microservices": "Microservices",
+    "company": "Company",
+    "aboutUs": "About Us",
+    "blog": "Blog",
+    "careers": "Careers",
+    "contact": "Contact",
+    "resources": "Resources",
+    "caseStudies": "Case Studies",
+    "whitepapers": "Whitepapers",
+    "webinars": "Webinars",
+    "faq": "FAQ",
+    "community": "Community",
+    "events": "Events",
+    "copyright": "© 2025 Hexagun. All rights reserved."
+  },
+  "Hero": {
+    "title": "We design the future of technology.",
+    "subtitle": "Building Custom Software Solutions",
+    "exploreServices": "Explore Our Services",
+    "contactUs": "Contact Us"
+  },
+  "Features": {
+    "title": "Why Choose Us?",
+    "hexagonalArchitecture": {
+      "title": "Hexagonal Architecture",
+      "description": "Explicit separation of user-side, server-side, and business logic for scalable and maintainable applications."
+    },
+    "microservices": {
+      "title": "Microservices",
+      "description": "Build microservices that communicate via well-defined APIs for flexible and efficient systems."
+    },
+    "responsiveDesign": {
+      "title": "Responsive Design",
+      "description": "Adaptive design ensuring compatibility across all devices and browsers."
+    },
+    "webDevelopment": {
+      "title": "Web Development",
+      "description": "High-quality web solutions using the latest technologies and frameworks."
+    },
+    "businessAnalysis": {
+      "title": "Business Analysis",
+      "description": "Tools and analytics to identify strengths, detect potential clients, and gain insights from data."
+    },
+    "mobileDevelopment": {
+      "title": "Mobile Development",
+      "description": "Build mobile applications with the best UX/UI experience for Android and iOS."
+    }
+  },
+  "CTA": {
+    "title": "Ready to build the future of your business?",
+    "description": "Contact us today to discuss how our expertise in hexagonal architecture, web development, and mobile applications can help your business grow and thrive in the digital age.",
+    "contactUs": "Contact Us",
+    "exploreServices": "Explore Our Services"
+  },
+  "Innovate": {
+    "title": "Innovate with Cutting-Edge Technology",
+    "description": "We help companies grow, reducing costs and increasing profits with the use of technology, inspired by the Hexagonal architecture to solve complex problems, reduce and control costs, increase your profits and make your business to grow. From the development of new applications, through modernization, management and maintenance, we cover all stages of the application lifecycle.",
+    "exploreServices": "Explore Our Services"
+  },
+  "Cloud": {
+    "title": "Powered by Leading Technologies",
+    "description": "At Hexagun, we leverage a robust stack of modern technologies including TypeScript, React, Node.js, Next.js, and Docker to build scalable, high-performance applications. Our expertise in tools like Git, Jira, and Figma ensures seamless collaboration and efficient project management. Whether it's web development, mobile applications, or microservices, we use these cutting-edge tools to solve complex problems, reduce costs, and drive your business growth.",
+    "buildWithUs": "Build with Us"
+  },
+  "Contact": {
+    "title": "Contact Us",
+    "subtitle": "Fill out the form below and we'll get back to you as soon as possible.",
+    "name": "Name",
+    "namePlaceholder": "Your name",
+    "email": "Email",
+    "emailPlaceholder": "your.email@example.com",
+    "message": "Message",
+    "messagePlaceholder": "How can we help you?",
+    "send": "Send Message",
+    "sending": "Sending...",
+    "successTitle": "Message sent!",
+    "successDescription": "We'll get back to you as soon as possible.",
+    "errorTitle": "Error",
+    "errorDescription": "Something went wrong. Please try again later.",
+    "recaptchaRequired": "reCAPTCHA required",
+    "recaptchaDescription": "Please complete the reCAPTCHA before submitting.",
+    "validation": {
+      "nameMin": "Name must be at least 2 characters.",
+      "emailInvalid": "Please enter a valid email address.",
+      "messageMin": "Message must be at least 10 characters."
+    }
+  },
+  "Odoo": {
+    "urgencyBanner": {
+      "limitedOffer": "Limited Offer: Free Consultation",
+      "onlyFirst": "Only the first 10 contacts this month",
+      "reserveNow": "Reserve Now"
+    },
+    "hero": {
+      "badge": "Certified Odoo Learning Partner",
+      "title": "Multiply your productivity",
+      "titleHighlight": "up to 3x",
+      "titleEnd": "with Odoo",
+      "description": "Stop wasting time with disconnected systems. Centralize sales, inventory, accounting and more in a single platform.",
+      "expertImplementation": "Implemented by certified experts",
+      "speakYourLanguage": "who speak your language.",
+      "benefits": {
+        "implementation": "Implementation in 4-6 weeks",
+        "roi": "ROI in less than 6 months",
+        "support": "24/7 Support"
+      },
+      "scheduleFreeConsultation": "Schedule Your Free Consultation",
+      "viewIndustries": "View Industries",
+      "noCommitment": "No commitment",
+      "consultingValue": "Consultation valued at $500 USD",
+      "limitedSpots": "Only 10 spots this month"
+    },
+    "stats": {
+      "title": "Results That Transform Businesses",
+      "subtitle": "Our clients experience measurable improvements from the first month",
+      "items": {
+        "productivity": {
+          "value": "40%",
+          "label": "Average productivity increase",
+          "company": "Medium businesses"
+        },
+        "hours": {
+          "value": "15 hours",
+          "label": "Saved per week in processes",
+          "company": "Teams of 10+ people"
+        },
+        "costs": {
+          "value": "30%",
+          "label": "Reduction in operating costs",
+          "company": "First 6 months"
+        },
+        "companies": {
+          "value": "500+",
+          "label": "Companies trust our team",
+          "company": "Latin America"
+        }
+      }
+    },
+    "features": {
+      "title": "Our Odoo Services",
+      "subtitle": "We offer a complete range of services to maximize the value of your Odoo investment",
+      "items": {
+        "training": {
+          "title": "Certified Training",
+          "description": "As a Learning Partner, we offer official Odoo training for your team, ensuring maximum platform utilization."
+        },
+        "implementation": {
+          "title": "Professional Implementation",
+          "description": "We configure Odoo according to your company's specific needs, ensuring a smooth and efficient transition."
+        },
+        "development": {
+          "title": "Custom Development",
+          "description": "We create custom modules and functionalities to perfectly adapt Odoo to your business processes."
+        },
+        "consulting": {
+          "title": "Specialized Consulting",
+          "description": "We analyze your processes and advise you on the best module configuration to optimize your operation."
+        },
+        "migration": {
+          "title": "Data Migration",
+          "description": "We migrate your data from legacy systems or previous Odoo versions safely and without information loss."
+        },
+        "support": {
+          "title": "Continuous Support",
+          "description": "We provide specialized technical support to resolve any issues and keep your system running optimally."
+        }
+      }
+    },
+    "comparison": {
+      "title": "Before and After Odoo",
+      "subtitle": "Discover how Odoo eliminates your operational headaches",
+      "withoutOdoo": "Without Odoo",
+      "withOdoo": "With Odoo",
+      "items": {
+        "systems": { "without": "Multiple disconnected systems", "with": "Everything integrated in one platform" },
+        "processes": { "without": "Repetitive manual processes", "with": "Intelligent automation" },
+        "data": { "without": "Scattered and hard to analyze data", "with": "Real-time dashboards" },
+        "costs": { "without": "High costs for multiple licenses", "with": "One system, one cost" },
+        "training": { "without": "Constant training on each system", "with": "Unified and intuitive interface" }
+      }
+    },
+    "partnerBenefits": {
+      "badge": "CERTIFIED ODOO LEARNING PARTNER",
+      "titlePart1": "The Difference of Working with an",
+      "titleHighlight": "Official Partner",
+      "subtitle": "Implementing Odoo yourself is not the same as doing it with a certified partner.",
+      "subtitleHighlight": "We accompany you every step of the way.",
+      "items": {
+        "manager": {
+          "title": "Dedicated Customer Experience Manager",
+          "description": "An expert assigned exclusively to ensure your success with Odoo",
+          "highlight": "Your success is our priority"
+        },
+        "support": {
+          "title": "Direct Support Line",
+          "description": "Direct help button to call us when you need it, no waiting",
+          "highlight": "Immediate response"
+        },
+        "custom": {
+          "title": "Custom Development",
+          "description": "We adapt Odoo exactly to your business with custom modules and features",
+          "highlight": "100% customized"
+        },
+        "official": {
+          "title": "Official Odoo Support",
+          "description": "Direct access to the Odoo team for complex technical issues",
+          "highlight": "Corporate backing"
+        },
+        "coverage": {
+          "title": "Complete Partner Coverage",
+          "description": "Implementation, training, maintenance and updates included",
+          "highlight": "Full service"
+        }
+      },
+      "comparison": {
+        "title": "Without Partner vs With Certified Partner",
+        "without": {
+          "item1": "Implementation on your own",
+          "item2": "Limited community support",
+          "item3": "No professional customization"
+        },
+        "with": {
+          "item1": "Experts dedicated to your project",
+          "item2": "Unlimited official support",
+          "item3": "Custom development",
+          "item4": "Training and follow-up"
+        }
+      },
+      "ctaButton": "Schedule Your Free Consultation",
+      "ctaSubtext": "Discover how a certified partner accelerates your success with Odoo"
+    },
+    "modules": {
+      "title": "Modules We Implement",
+      "subtitle": "Experience in all Odoo modules to cover every area of your company",
+      "items": {
+        "sales": { "name": "Sales", "description": "CRM and sales management" },
+        "inventory": { "name": "Inventory", "description": "Warehouse control" },
+        "accounting": { "name": "Accounting", "description": "Financial management" },
+        "hr": { "name": "HR", "description": "Human resources" },
+        "manufacturing": { "name": "Manufacturing", "description": "Production and MRP" },
+        "projects": { "name": "Projects", "description": "Project management" },
+        "invoicing": { "name": "Invoicing", "description": "Electronic invoicing" },
+        "ecommerce": { "name": "eCommerce", "description": "Online store" }
+      }
+    },
+    "testimonials": {
+      "title": "What Our Clients Say",
+      "subtitle": "Companies across Latin America trust us for their digital transformation",
+      "items": {
+        "carlos": {
+          "name": "Carlos Rodriguez",
+          "role": "CEO",
+          "company": "TechSolutions S.A.",
+          "quote": "The Odoo implementation completely transformed our operation. In 3 months we recovered the investment thanks to process automation."
+        },
+        "maria": {
+          "name": "Maria Gonzalez",
+          "role": "Operations Director",
+          "company": "Lopez Distributors",
+          "quote": "The team is exceptionally professional. They not only implemented Odoo, but trained all our staff. We are now much more efficient."
+        },
+        "juan": {
+          "name": "Juan Martinez",
+          "role": "General Manager",
+          "company": "Southern Manufacturing",
+          "quote": "After trying other providers, we found the perfect partner in this team. They know Odoo deeply and understand real business needs."
+        }
+      }
+    },
+    "guarantee": {
+      "badge": "Guarantees without fine print",
+      "title": "Zero Risk, Maximum Return",
+      "subtitle": "Your investment is protected. We promise real results or we refund your money",
+      "items": {
+        "satisfaction": {
+          "title": "Satisfaction Guarantee",
+          "description": "If you're not satisfied in the first 30 days, we refund your investment"
+        },
+        "certification": {
+          "title": "Official Certification",
+          "description": "We are an Odoo Learning Partner with international certification"
+        },
+        "support": {
+          "title": "Guaranteed Support",
+          "description": "Response in less than 4 hours on business days, included in all our plans"
+        },
+        "express": {
+          "title": "Express Implementation",
+          "description": "Your system operational in 4-6 weeks or we compensate for the extra time"
+        }
+      }
+    },
+    "cta": {
+      "title": "Join the 500+ companies that have already transformed their business",
+      "description": "Schedule a",
+      "descriptionBold": "free consultation",
+      "descriptionValue": "(value $500 USD)",
+      "descriptionEnd": "with our certified experts. We'll show you how Odoo can:",
+      "benefits": {
+        "costs": "Reduce your operating costs by up to 30%",
+        "time": "Save 15+ hours weekly on repetitive processes",
+        "visibility": "Have complete visibility of your business in real time"
+      },
+      "scheduleButton": "Schedule Free Consultation",
+      "downloadCase": "View Success Stories",
+      "limitedSpots": "Only 3 spots available this month"
+    },
+    "industries": {
+      "title": "Select your industry",
+      "subtitle": "Odoo offers specialized solutions for every type of business. Find the perfect configuration for your industry.",
+      "categories": {
+        "realEstate": {
+          "name": "Real Estate, Construction & Maintenance",
+          "industries": {
+            "architects": { "name": "Architecture Firm", "description": "For architects, design studios and construction planners" },
+            "condominium": { "name": "Homeowners Association", "description": "For homeowners associations, property managers and condominiums" },
+            "construction": { "name": "Construction", "description": "For builders, contractors and construction project firms" },
+            "hvac_services": { "name": "HVAC Services", "description": "For heating, ventilation and air conditioning contractors" },
+            "industry_real_estate": { "name": "Real Estate", "description": "For landlords, property managers and housing associations" },
+            "real_estate": { "name": "Real Estate Agency", "description": "For agents, brokers and real estate professionals" },
+            "solar_installation": { "name": "Solar Energy Systems", "description": "For solar panel installers, energy consultants and renewable energy providers" }
+          }
+        },
+        "homeServices": {
+          "name": "Home Commerce & Services",
+          "industries": {
+            "bike_leasing": { "name": "Bike Rental", "description": "For leasing providers, corporate mobility services and long-term rental companies" },
+            "bike_shop": { "name": "Bike Shop", "description": "For bicycle retailers, repair shops and cycling specialists" },
+            "cleaning_services": { "name": "Cleaning Services", "description": "For cleaning companies and janitorial services" },
+            "electrician": { "name": "Electricians", "description": "For electricians, wiring contractors and technical service providers" },
+            "gardening": { "name": "Gardening", "description": "For landscapers, property maintenance and outdoor service providers" },
+            "handyman": { "name": "Maintenance Services", "description": "For repair services, maintenance workers and general contractors" },
+            "shoe_maker": { "name": "Shoe Repair & Manufacturing", "description": "For cobblers and shoe repair shops" },
+            "surveyor": { "name": "Surveying & Mapping", "description": "For surveyors, mapping companies and engineering services" }
+          }
+        },
+        "foodBeverage": {
+          "name": "Food & Beverage",
+          "industries": {
+            "bakery": { "name": "Bakery", "description": "For artisan bakers and bakery shops and chains" },
+            "bar_industry": { "name": "Bar & Pub", "description": "For bars, pubs and cocktail-focused venues" },
+            "beverage_distributor": { "name": "Beverage Distributor", "description": "For beverage wholesalers and logistics and distribution companies" },
+            "cake_shop": { "name": "Cake Shop", "description": "For cake designers, pastry shops and specialty bakeries" },
+            "candy_shop": { "name": "Candy Shop", "description": "For confectionery stores, online candy shops and chocolatiers" },
+            "fast_food": { "name": "Fast Food", "description": "For fast food restaurants, takeaway and franchise chains" },
+            "food_trucks": { "name": "Food Truck", "description": "For mobile kitchens, street food vendors and catering trucks" },
+            "industry_restaurant": { "name": "Fine Dining Restaurant", "description": "For gourmet restaurants and dining venues" },
+            "takeaway_restaurant": { "name": "Takeaway Restaurant", "description": "For restaurants, fast food and online food delivery providers" }
+          }
+        },
+        "cultureArts": {
+          "name": "Culture & Arts",
+          "industries": {
+            "art_craft": { "name": "Art Supply Store", "description": "For art dealers, exhibition spaces and cultural institutions" },
+            "concert_halls": { "name": "Concert Venues", "description": "For music venues and performance spaces" },
+            "gallery": { "name": "Gallery", "description": "For art dealers, exhibition spaces and cultural institutions" },
+            "library": { "name": "Library", "description": "For public libraries, academic collections and private archives" },
+            "museum": { "name": "Museum", "description": "For museums, heritage sites and cultural institutions" },
+            "photography": { "name": "Photography", "description": "For photographers, studios and creative agencies" },
+            "tattoo_shop": { "name": "Tattoo Studio", "description": "For tattoo artists, nail salons and body art studios" },
+            "theater": { "name": "Theater", "description": "For theaters and cultural institutions" }
+          }
+        },
+        "education": {
+          "name": "Education & Training",
+          "industries": {
+            "diy_workshops": { "name": "DIY Workshops", "description": "For maker spaces, hobby workshops and creative learning centers" },
+            "driving_school": { "name": "Driving School", "description": "For driving academies, instructors and vehicle training centers" },
+            "elearning_platform": { "name": "eLearning Platform", "description": "For online courses, trainers and digital academies" },
+            "student_organization": { "name": "Student Organizations", "description": "For associations, clubs and student unions" }
+          }
+        },
+        "eventsNonprofit": {
+          "name": "Events, Community & Non-Profit Organizations",
+          "industries": {
+            "coworking": { "name": "Coworking", "description": "For coworking centers, shared offices and flexible workspace providers" },
+            "event_management": { "name": "Event Management", "description": "For event planners, agencies and professional organizers" },
+            "members_club": { "name": "Members Club", "description": "For private clubs, associations and community groups" },
+            "non_profit_organization": { "name": "Non-Profit Organization", "description": "For charities, NGOs and associations" },
+            "sport_events": { "name": "Sports Events", "description": "For event organizers, federations and ticket providers" },
+            "sports_club": { "name": "Sports Club", "description": "For local clubs, federations and training centers" },
+            "summer_camps": { "name": "Summer Camps", "description": "For camp organizers, activity leaders and youth programs" },
+            "team_sports_club": { "name": "Team Sports Club", "description": "For soccer, basketball and other sports teams" },
+            "wedding_planner": { "name": "Wedding Planner", "description": "For wedding planners and consultants and event designers" }
+          }
+        },
+        "hospitality": {
+          "name": "Hospitality, Tourism & Leisure",
+          "industries": {
+            "bowling": { "name": "Bowling Alleys", "description": "For bowling venues, fun centers and entertainment venues" },
+            "campsite": { "name": "Campsite", "description": "For camping areas, glamping accommodations and cabin rentals" },
+            "escape_rooms": { "name": "Escape Rooms", "description": "For escape room operators, adventure venues and group entertainment" },
+            "guest_house": { "name": "Guest House", "description": "For B&Bs, family accommodations and hostels" },
+            "guided_tours": { "name": "Guided Tours", "description": "For urban tour operators, local guides and city tourism companies" },
+            "holiday_house": { "name": "Holiday House", "description": "For vacation rentals, summer houses and vacation property owners" },
+            "hotel": { "name": "Hotel", "description": "For hotels, resorts and hospitality chains" },
+            "night_clubs": { "name": "Night Clubs", "description": "For clubs, lounges and nightlife venues" },
+            "outdoor_activities": { "name": "Outdoor Activities", "description": "For amusement parks, tours and outdoor activity organizers" },
+            "spa_resort": { "name": "Spa Resort", "description": "For wellness resorts, spa hotels and luxury vacations" },
+            "yoga_pilates": { "name": "Yoga & Pilates Studio", "description": "For yoga studios, pilates trainers and wellness centers" }
+          }
+        },
+        "manufacturing": {
+          "name": "Manufacturing & Supply Chain",
+          "industries": {
+            "3pl_logistic_company": { "name": "Third-Party Logistics", "description": "For carriers, couriers and distribution networks" },
+            "carpenter": { "name": "Carpentry", "description": "For carpentry workshops, custom furniture builders and artisans" },
+            "corporate_gifts": { "name": "Corporate Gifts", "description": "For gift providers, promotional products and merchandise producers" },
+            "custom_furniture": { "name": "Custom Furniture Production", "description": "For custom furniture manufacturers, carpentry workshops and design studios" },
+            "food_distribution": { "name": "Food Distribution", "description": "For food factories, artisan producers and distribution companies" },
+            "metal_fabricator": { "name": "Metal Fabricator", "description": "For workshops, industrial manufacturers and metalworking companies" },
+            "micro_brewery": { "name": "Microbrewery", "description": "For craft brewers and local breweries" },
+            "textile_manufacturing": { "name": "Textile Manufacturing", "description": "For textile producers, carpet manufacturers and leather product producers" }
+          }
+        },
+        "healthWellness": {
+          "name": "Health, Wellness & Personal Care",
+          "industries": {
+            "climbing_gym": { "name": "Climbing Gym", "description": "For climbing venues, bouldering centers and training facilities" },
+            "eyewear_shop": { "name": "Eyewear Shop", "description": "For opticians, eyewear retailers and optical clinics" },
+            "fitness": { "name": "Gym", "description": "For gyms, wellness clubs and personal training studios" },
+            "hair_salon": { "name": "Hair Salon", "description": "For salons and hairdressers" },
+            "personal_trainer": { "name": "Personal Trainer", "description": "For trainers, health providers and wellness instructors" },
+            "pharmacy_retail": { "name": "Pharmacy", "description": "For pharmacies, drugstores and health retailers" },
+            "veterinary_clinic": { "name": "Veterinary Clinic", "description": "For veterinaries, animal hospitals and pet healthcare workers" },
+            "wellness_practitioner": { "name": "Wellness Specialists", "description": "For therapists, coaches and holistic health providers" }
+          }
+        },
+        "businessServices": {
+          "name": "Business Services",
+          "industries": {
+            "accounting_firm": { "name": "Accounting Firm", "description": "For accountants, trustees, auditors and financial consultants" },
+            "billboard_rental": { "name": "Billboard Rental", "description": "For advertising companies, media agencies and outdoor space owners" },
+            "certification_organism": { "name": "Audit & Certification", "description": "For auditors, certification agencies and compliance specialists" },
+            "coal_petroleum": { "name": "Fossil Fuel Trading", "description": "For energy traders, fuel distributors and commodity agents" },
+            "environmental_agency": { "name": "Environmental Protection Agency", "description": "For consultants, sustainability companies and inspectors" },
+            "headhunter": { "name": "Talent Acquisition", "description": "For recruiters, employment agencies and HR consultants" },
+            "industry_lawyer": { "name": "Law Firm", "description": "For lawyers, legal consultants and notaries" },
+            "it_hardware": { "name": "IT Hardware & Support", "description": "For IT resellers, support providers and hardware providers" },
+            "marketing_agency": { "name": "Marketing Agency", "description": "For agencies, consultants and branding professionals" },
+            "odoo_partner": { "name": "Odoo Partner", "description": "For people who integrate, resell and consult on Odoo" },
+            "software_reseller": { "name": "Software Distributor", "description": "For software distributors, integrators and resellers" }
+          }
+        },
+        "retailEcommerce": {
+          "name": "Retail & E-commerce",
+          "industries": {
+            "agriculture_shop": { "name": "Agriculture Store", "description": "For agricultural suppliers, garden stores and farmer distributors" },
+            "automobile": { "name": "Auto Parts", "description": "For parts resellers, car accessory stores and auto component providers" },
+            "bookstore": { "name": "Bookstore", "description": "For book retailers, comic stores and independent bookstores" },
+            "clothing_boutique": { "name": "Clothing Store", "description": "For fashion retailers, boutiques and clothing stores" },
+            "cosmetics_store": { "name": "Cosmetics Store", "description": "For beauty salons, skincare stores and perfumeries" },
+            "dropshipping": { "name": "Dropshipping", "description": "For online sellers, e-commerce operators and sourcing businesses" },
+            "electronic_store": { "name": "Electronics Store", "description": "For electronics stores, gadget shops and appliance distributors" },
+            "florist": { "name": "Florist", "description": "For flower shops, florist events and online flower retailers" },
+            "fmcg_store": { "name": "Grocery Store", "description": "For supermarkets, local stores and small retailers" },
+            "furniture_store": { "name": "Furniture Store", "description": "For furniture retailers, showrooms and physical stores" },
+            "hardware_shop": { "name": "Hardware Store", "description": "For craft stores, tool retailers and construction suppliers" },
+            "toy_store": { "name": "Toy Store", "description": "For toy stores, board game resellers and children's stores" },
+            "wine_merchant": { "name": "Wine Store", "description": "For wine shops, distributors and wine experts" }
+          }
+        }
+      }
+    }
+  }
+}

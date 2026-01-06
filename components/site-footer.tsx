@@ -1,14 +1,19 @@
+"use client";
+
 import Link from "next/link";
 import React from "react";
+import { useTranslations } from "next-intl";
 
 function SiteFooter() {
+  const t = useTranslations("Footer");
+
   return (
     <footer className="bg-slate-900 border-t border-gray-800 bg-gradient-to-r from-gray-900 via-gray-800 to-black py-12">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 pl-5 ml-5 lg:pl-20 lg:ml-20">
           <div>
             <h3 className="text-sm font-semibold text-slate-200 tracking-wider uppercase mb-4">
-              Services
+              {t("services")}
             </h3>
             <ul className="space-y-2">
               <li>
@@ -16,7 +21,7 @@ function SiteFooter() {
                   href="/services/hexagonal-architecture"
                   className="text-slate-400 hover:text-white transition-colors"
                 >
-                  Hexagonal Architecture
+                  {t("hexagonalArchitecture")}
                 </Link>
               </li>
               <li>
@@ -24,7 +29,7 @@ function SiteFooter() {
                   href="/services/web-development"
                   className="text-slate-400 hover:text-white transition-colors"
                 >
-                  Web Development
+                  {t("webDevelopment")}
                 </Link>
               </li>
               <li>
@@ -32,7 +37,7 @@ function SiteFooter() {
                   href="/services/mobile-applications"
                   className="text-slate-400 hover:text-white transition-colors"
                 >
-                  Mobile Applications
+                  {t("mobileApplications")}
                 </Link>
               </li>
               <li>
@@ -40,14 +45,14 @@ function SiteFooter() {
                   href="/services/microservices"
                   className="text-slate-400 hover:text-white transition-colors"
                 >
-                  Microservices
+                  {t("microservices")}
                 </Link>
               </li>
             </ul>
           </div>
           <div>
             <h3 className="text-sm font-semibold text-slate-200 tracking-wider uppercase mb-4">
-              Company
+              {t("company")}
             </h3>
             <ul className="space-y-2">
               <li>
@@ -55,7 +60,7 @@ function SiteFooter() {
                   href="/about"
                   className="text-slate-400 hover:text-white transition-colors"
                 >
-                  About Us
+                  {t("aboutUs")}
                 </Link>
               </li>
               <li>
@@ -63,7 +68,7 @@ function SiteFooter() {
                   href="/blog"
                   className="text-slate-400 hover:text-white transition-colors"
                 >
-                  Blog
+                  {t("blog")}
                 </Link>
               </li>
               <li>
@@ -71,7 +76,7 @@ function SiteFooter() {
                   href="/careers"
                   className="text-slate-400 hover:text-white transition-colors"
                 >
-                  Careers
+                  {t("careers")}
                 </Link>
               </li>
               <li>
@@ -79,14 +84,14 @@ function SiteFooter() {
                   href="/contact"
                   className="text-slate-400 hover:text-white transition-colors"
                 >
-                  Contact
+                  {t("contact")}
                 </Link>
               </li>
             </ul>
           </div>
           <div>
             <h3 className="text-sm font-semibold text-slate-200 tracking-wider uppercase mb-4">
-              Resources
+              {t("resources")}
             </h3>
             <ul className="space-y-2">
               <li>
@@ -94,7 +99,7 @@ function SiteFooter() {
                   href="/resources/case-studies"
                   className="text-slate-400 hover:text-white transition-colors"
                 >
-                  Case Studies
+                  {t("caseStudies")}
                 </Link>
               </li>
               <li>
@@ -102,7 +107,7 @@ function SiteFooter() {
                   href="/resources/whitepapers"
                   className="text-slate-400 hover:text-white transition-colors"
                 >
-                  Whitepapers
+                  {t("whitepapers")}
                 </Link>
               </li>
               <li>
@@ -110,7 +115,7 @@ function SiteFooter() {
                   href="/resources/webinars"
                   className="text-slate-400 hover:text-white transition-colors"
                 >
-                  Webinars
+                  {t("webinars")}
                 </Link>
               </li>
               <li>
@@ -118,14 +123,14 @@ function SiteFooter() {
                   href="/resources/faq"
                   className="text-slate-400 hover:text-white transition-colors"
                 >
-                  FAQ
+                  {t("faq")}
                 </Link>
               </li>
             </ul>
           </div>
           <div>
             <h3 className="text-sm font-semibold text-slate-200 tracking-wider uppercase mb-4">
-              Community
+              {t("community")}
             </h3>
             <ul className="space-y-2">
               <li>
@@ -157,7 +162,7 @@ function SiteFooter() {
                   href="/community/events"
                   className="text-slate-400 hover:text-white transition-colors"
                 >
-                  Events
+                  {t("events")}
                 </Link>
               </li>
             </ul>
@@ -165,7 +170,7 @@ function SiteFooter() {
         </div>
         <div className="mt-8 border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-sm text-slate-400 pl-0 ml-0 lg:pl-20 lg:ml-20">
-            © 2025 Hexagun. All rights reserved.
+            {t("copyright")}
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0 pr-0 mr-0 lg:pr-20 lg:mr-20">
             <Link

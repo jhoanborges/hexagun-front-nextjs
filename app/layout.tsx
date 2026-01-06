@@ -4,9 +4,10 @@ import { Inter as FontSans } from "next/font/google"
 import { cn } from "@/lib/utils"
 import { ThemeProvider } from "@/components/ui/theme-provider";
 import { TooltipProvider } from "@/components/ui/tooltip";
-import Head from 'next/head';
 import { Toaster } from "@/components/ui/toaster"
-import { useEffect } from "react";
+import TawkToChat from "@/components/TawkToChat";
+import { NextIntlClientProvider } from "next-intl";
+import { getLocale, getMessages } from "next-intl/server";
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -151,14 +152,20 @@ export const metadata: Metadata = {
   }
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return (
-    <html lang="en" suppressHydrationWarning className="dark">
+  const locale = await getLocale();
+  const messages = await getMessages();
 
+  return (
+    <html lang={locale} suppressHydrationWarning className="dark">
+      <head>
+        <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
+        <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+      </head>
       <body
         className={cn(
           "min-h-screen bg-background font-sans antialiased",
@@ -166,10 +173,13 @@ export default function RootLayout({
         )}
       >
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false} storageKey="hexagun-ui-theme">
-          <TooltipProvider delayDuration={0}>
-            {children}
-            <Toaster />
-          </TooltipProvider>
+          <NextIntlClientProvider messages={messages}>
+            <TooltipProvider delayDuration={0}>
+              {children}
+              <Toaster />
+              <TawkToChat />
+            </TooltipProvider>
+          </NextIntlClientProvider>
         </ThemeProvider>
       </body>
     </html>
