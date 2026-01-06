@@ -76,7 +76,7 @@ export default function Component() {
           <CompareComponent />
           <CloudSection />
           <PortfolioSection />
-          {/*<CertificationsSection/>*/}
+          <CertificationsSection/>
           {/* Testimonials Section */}
           {/*<TestimonialsSection />*/}
 
