@@ -3,9 +3,7 @@
 import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm } from "react-hook-form"
 import { z } from "zod"
-import emailjs from "@emailjs/browser"
 import { useState } from "react"
-import ReCAPTCHA from "react-google-recaptcha"
 import { useTranslations } from "next-intl"
 
 import { Button } from "@/components/ui/button"
@@ -16,7 +14,6 @@ import { useToast } from "@/hooks/use-toast"
 
 export default function ContactForm() {
   const { toast } = useToast()
-  const [recaptchaToken, setRecaptchaToken] = useState<string | null>(null)
   const [loading, setLoading] = useState(false)
   const t = useTranslations("Contact")
 
@@ -39,52 +36,23 @@ export default function ContactForm() {
 
   // Handle form submission
   async function onSubmit(values: z.infer<typeof formSchema>) {
-    if (!recaptchaToken) {
-      toast({
-        title: t("recaptchaRequired"),
-        description: t("recaptchaDescription"),
-        variant: "destructive",
-      })
-      return
-    }
-
     setLoading(true)
 
     try {
-      // Verify reCAPTCHA with Next.js API route
-      const verifyRes = await fetch("/api/verify-recaptcha", {
+      const response = await fetch("/api/send", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ recaptchaToken }),
+        body: JSON.stringify(values),
       })
 
-      const verifyData = await verifyRes.json()
-      console.log('verifyData', verifyData)
-      if (!verifyData.success) {
-        throw new Error("Failed reCAPTCHA verification")
+      const data = await response.json()
+
+      if (!response.ok) {
+        throw new Error(data.error || "Failed to send email")
       }
 
-      // Send email with EmailJS
-      const { name, email, message } = values
-      const response = await emailjs.send(
-        "service_hfbkb49", // Replace with EmailJS Service ID
-        "template_1z3s8ah", // Replace with EmailJS Template ID
-        {
-          from_name: name,
-          from_email: email,
-          message: message,
-          "g-recaptcha-response": recaptchaToken,
-        },
-        "vYxVSatu6-6hFJs0N" // Replace with EmailJS Public Key
-      )
-
-      if (response.status === 200) {
-        toast({ title: t("successTitle"), description: t("successDescription") })
-        form.reset()
-        setRecaptchaToken(null) // Reset reCAPTCHA
-      } else {
-        throw new Error("Failed to send email")
-      }
+      toast({ title: t("successTitle"), description: t("successDescription") })
+      form.reset()
     } catch (error) {
       console.error("Error:", error)
       toast({
@@ -95,7 +63,6 @@ export default function ContactForm() {
     } finally {
       setLoading(false)
     }
-
   }
 
   return (
@@ -146,18 +113,7 @@ export default function ContactForm() {
             )}
           />
 
-          {/* reCAPTCHA */}
-          <div className="flex justify-center">
-            {/* @ts-ignore */}
-            <ReCAPTCHA
-              sitekey={process.env.NEXT_PUBLIC_GOOGLE_RECAPTCHA_KEY as string}
-              onChange={(token: any) => {
-                setRecaptchaToken(token)
-              }}
-            />
-          </div>
-
-          <Button type="submit" disabled={loading}>
+          <Button type="submit" disabled={loading} className="w-full">
             {loading ? t("sending") : t("send")}
           </Button>
         </form>

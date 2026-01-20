@@ -92,8 +92,6 @@
     "successDescription": "Nos pondremos en contacto contigo lo antes posible.",
     "errorTitle": "Error",
     "errorDescription": "Algo salió mal. Por favor intenta de nuevo más tarde.",
-    "recaptchaRequired": "reCAPTCHA requerido",
-    "recaptchaDescription": "Por favor completa el reCAPTCHA antes de enviar.",
     "validation": {
       "nameMin": "El nombre debe tener al menos 2 caracteres.",
       "emailInvalid": "Por favor ingresa un correo electrónico válido.",

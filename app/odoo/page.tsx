@@ -15,6 +15,7 @@ import { OdooTestimonialsSection } from "@/components/odoo/odoo-testimonials-sec
 import { OdooGuaranteeSection } from "@/components/odoo/odoo-guarantee-section";
 import OdooCTASection from "@/components/odoo/odoo-cta-section";
 import { OdooPricingSection } from "@/components/odoo/odoo-pricing-section";
+import OdooVideoSection from "@/components/odoo/odoo-video-section";
 
 const AnimatedBackground = () => {
   const controls = useAnimation();
@@ -53,6 +54,7 @@ export default function OdooPage() {
           <OdooUrgencyBanner />
           <OdooHeroSection />
           <OdooStatsSection />
+          <OdooVideoSection />
           <OdooFeaturesSection />
           <OdooComparisonSection />
           <OdooPartnerBenefitsSection />

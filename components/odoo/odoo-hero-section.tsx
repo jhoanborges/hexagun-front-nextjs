@@ -4,6 +4,7 @@ import { motion } from "framer-motion"
 import Image from "next/image"
 import { ArrowRight, CheckCircle2 } from "lucide-react"
 import { useTranslations } from "next-intl"
+import ContactForm from "@/components/ContactForm"
 
 declare global {
   interface Window {
@@ -94,6 +95,20 @@ export function OdooHeroSection() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
+            <div className="relative w-full max-w-md">
+              <div className="absolute inset-0 bg-gradient-to-r from-[#714B67]/30 to-[#017E84]/30 blur-3xl rounded-xl" />
+              <div className="relative z-10 bg-slate-900/80 backdrop-blur-sm border border-slate-700 rounded-xl p-6">
+                <ContactForm />
+              </div>
+            </div>
+          </motion.div>
+        </div>
+                            <motion.div
+            className="flex-1 flex flex-col items-center gap-8"
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+          >
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-r from-[#714B67]/30 to-[#017E84]/30 blur-3xl rounded-full" />
               <Image
@@ -105,7 +120,6 @@ export function OdooHeroSection() {
               />
             </div>
           </motion.div>
-        </div>
         <motion.div
           className="mt-16 flex justify-center"
           initial={{ opacity: 0, y: 30 }}
